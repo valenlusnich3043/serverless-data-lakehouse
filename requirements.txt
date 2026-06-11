@@ -1,0 +1,5 @@
+streamlit
+pandas
+pyathena
+python-dotenv
+pyarrow

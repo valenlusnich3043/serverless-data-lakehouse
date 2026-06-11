@@ -1,0 +1,7 @@
+.env
+transacciones.json
+transacciones.parquet
+__pycache__/
+*.json
+*.parquet
+.streamlit/
