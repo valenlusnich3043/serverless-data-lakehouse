@@ -10,7 +10,11 @@ Este proyecto implementa la arquitectura de un **Data Lakehouse moderno y Server
 5. **Capa de Visualización (Streamlit):** Dashboard interactivo que consume las métricas de Athena en tiempo real, aplicando estrategias de caché para optimizar el rendimiento.
 
 ## 📊 Dashboard Operativo
-*(¡Acá pegá la captura de pantalla de tu dashboard corriendo, como `image_48b59e.png` o `image_491ed4.png`!)*
+<img width="1366" height="631" alt="image" src="https://github.com/user-attachments/assets/c9102344-75bb-425b-b44f-3da633b9e78e" />
+<img width="1366" height="301" alt="image" src="https://github.com/user-attachments/assets/d294663b-8cdb-45d9-b7b8-98f147e5b6f8" />
+<img width="1366" height="535" alt="image" src="https://github.com/user-attachments/assets/44c52057-db9b-4435-8b4f-35647b1582f2" />
+<img width="1366" height="485" alt="image" src="https://github.com/user-attachments/assets/11f10672-017e-4e35-93f1-ef15ea00b741" />
+
 
 ### Key Features Implementadas:
 * **Simulación de Ingesta Interactiva:** Botón en frontend que dispara el flujo ETL completo (100k registros por lote).
