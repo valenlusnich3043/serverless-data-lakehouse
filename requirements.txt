@@ -3,3 +3,4 @@ pandas
 pyathena
 python-dotenv
 pyarrow
+plotly
