@@ -1,18 +1,18 @@
 import streamlit as st
+import os
+from dotenv import load_dotenv
 import pandas as pd
 from pyathena import connect
 import plotly.express as px
-import os
 import subprocess
-from dotenv import load_dotenv
 
 # Cargar credenciales del .env
 load_dotenv()
 
-AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY_ID")
-AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
-AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
-BUCKET_NAME = os.getenv("BUCKET_NAME")
+AWS_ACCESS_KEY = st.secrets.get("AWS_ACCESS_KEY_ID") or os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_KEY = st.secrets.get("AWS_SECRET_ACCESS_KEY") or os.getenv("AWS_SECRET_ACCESS_KEY")
+AWS_REGION = st.secrets.get("AWS_REGION") or os.getenv("AWS_REGION")
+BUCKET_NAME = st.secrets.get("BUCKET_NAME") or os.getenv("BUCKET_NAME")
 
 # Configuración de página de Streamlit
 st.set_page_config(page_title="Cloud Data Lakehouse Dashboard", layout="wide", page_icon="☁️")
